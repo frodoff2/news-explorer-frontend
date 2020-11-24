@@ -1,0 +1,16 @@
+@import url('__changed/header-saved__changed.css');
+@import url('__block/header-saved__block.css');
+@import url('__name/header-saved__name.css');
+@import url('__saved/header-saved__saved.css');
+@import url('__img/header-saved__img.css');
+@import url('__nav/header-saved__nav.css');
+@import url('__black/header-saved__black.css');
+@import url('__first/header-saved__first.css');
+@import url('__main/header-saved__main.css');
+@import url('__auth-black/header-saved__auth-black.css');
+
+
+.header-saved{
+    max-height: 600px;
+    background-position: center;
+} 

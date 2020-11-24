@@ -1,0 +1,20 @@
+.footer__icon{
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+}
+
+@media (max-width: 720px) { 
+    .footer__icon{
+        margin-top: -22px;
+        margin-left: 470px;
+        display: flex;
+    }
+  }  
+
+@media (max-width: 620px) { 
+    .footer__icon{
+        margin-left: 270px;
+    }
+  }  

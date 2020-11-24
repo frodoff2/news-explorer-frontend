@@ -1,0 +1,41 @@
+.main__button{
+  font-family: 'Roboto', 'Arial', sans-serif; 
+  height: 70px;
+  width: 168px;
+  margin-left: -27%;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #2F71E5;
+  border: none;
+  color: white;
+  margin-top: -2px;
+}
+
+.main__button:hover{
+  cursor: pointer;
+  background-color: #347EFF;
+}
+
+.main__button:focus{
+  cursor: pointer;
+  background-color: #2A65CC;
+  ;
+}
+
+
+@media (max-width: 1050px) { 
+  .main__button{ 
+    margin-top: -70px;
+    margin-left: 68.8%;
+  }
+} 
+
+@media (max-width: 620px) { 
+  .main__button{ 
+    width: 288px;
+    margin-top: 16px;
+    margin-left: 0px;
+
+  }
+} 
+

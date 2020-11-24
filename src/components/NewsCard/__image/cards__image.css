@@ -1,0 +1,26 @@
+.cards__image{
+  max-width: 400px;
+  max-height: 272px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border: 1px solid transparent;
+}
+
+@media (max-width: 1245px) { 
+    .cards__image {
+      width: 300px;
+    }
+  } 
+
+  @media (max-width: 950px) { 
+    .cards__image {
+      width: 224px;   
+    }
+  } 
+
+
+  @media (max-width: 750px) { 
+    .cards__image {
+      width: 288px;   
+    }
+  } 

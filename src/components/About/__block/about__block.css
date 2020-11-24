@@ -1,0 +1,25 @@
+
+.about__block{
+    max-width: 600px;
+}
+
+@media (max-width: 1200px) { 
+    .about__block{ 
+      width: 430px;
+    }
+  }  
+
+  @media (max-width: 750px) { 
+    .about__block{
+      width: 375px;
+      margin: auto;
+    }
+  }  
+
+  @media (max-width: 750px) { 
+    .about__block{
+      width: 288px;
+      margin: auto;
+      margin-top: 24px;
+    }
+  }  

@@ -1,0 +1,30 @@
+.main__par{
+  color: #FFFFFF;
+  font-size: 150px;
+  max-width: 550px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 0px;
+  margin-top: 25px;
+  margin-bottom: 64px;
+  font-family: 'Roboto', 'Arial', sans-serif; 
+}
+
+@media (max-width: 1050px) { 
+  .main__par{ 
+    font-size: 18px;
+    width: 450px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+
+  }
+} 
+
+@media (max-width: 620px) { 
+  .main__par{ 
+    margin-bottom: 122px;
+    width: 288px;
+  }
+} 

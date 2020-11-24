@@ -1,0 +1,23 @@
+.cards__theme{
+  font-family: 'Roboto', 'Arial', sans-serif; 
+  position: absolute;
+  background-color: white;;
+  border-radius: 10px;
+  width: 88px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 24px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;  
+}
+
+@media (max-width: 950px) { 
+  .cards__theme{
+    margin-left: 15px;
+
+  }
+} 

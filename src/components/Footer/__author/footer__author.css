@@ -1,0 +1,25 @@
+.footer__author{
+    font-family: 'Roboto', 'Arial', sans-serif; 
+    max-width: 500px;
+    color: #B6BCBF;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+@media (max-width: 950px) { 
+    .footer__author{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+  }  
+
+
+
+@media (max-width: 720px) { 
+    .footer__author{
+        margin-top: 125px;
+        position: absolute;
+        margin-left: 14px;
+        padding-bottom: 20px;
+    }
+  }  
