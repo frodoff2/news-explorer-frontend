@@ -1,0 +1,58 @@
+@import url('__image/cards__image.css');
+@import url('elements/elements.css');
+@import url('__date/cards__date.css');
+@import url('__text/cards__text.css');
+@import url('__title/cards__title.css');
+@import url('__source/cards__source.css');
+@import url('__block/cards__block.css');
+@import url('__source/_margins/cards__source_margins.css');
+@import url('__icon/cards__icon.css');
+@import url('__margins/cards__margins.css');
+@import url('__padding/cards__padding.css');
+@import url('__theme/cards__theme.css');
+@import url('__trash/cards__trash.css');
+@import url('__trash/_active/cards__trash_active.css');
+@import url('__save-but/cards__save-but.css');
+@import url('__del-saved/сards__del-saved.css');
+@import url('__pic/cards__pic.css');
+@import url('__save/cards__save.css');
+
+
+.cards:not(:last-child){
+  margin-right: 15px;
+}
+
+.cards{
+    max-width: 400px;
+    max-height: 576px;
+    border-radius: 5%;  
+    background-color: white;
+}
+
+@media (max-width: 1245px) { 
+    .cards {
+      width: 300px;
+      height: 502px;
+    }
+  } 
+
+  @media (max-width: 950px) { 
+    .cards {
+      width: 224px;   
+      height: 425px;
+    }
+  } 
+
+  @media (max-width: 750px) { 
+    .cards {
+      width: 288px;
+      height: 440px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .cards:not(:last-child){
+      margin-right: 0;
+    }
+    
+  } 

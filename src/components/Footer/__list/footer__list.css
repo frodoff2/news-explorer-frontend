@@ -1,0 +1,19 @@
+.footer__list{
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 950px) { 
+  .footer__list{
+      margin-top: 15px;
+  }
+}  
+
+
+@media (max-width: 720px) { 
+  .footer__list{
+      display: block;
+      margin-top: 0;
+  }
+}  

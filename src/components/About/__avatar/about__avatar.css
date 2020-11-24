@@ -1,0 +1,37 @@
+.about__avatar{
+    max-height: 464px;
+    max-width: 464px;
+    left: 0px;
+    top: 0px;
+    border-radius: 1000px;
+    background-size: contain;
+    margin-left: 104px;
+}
+
+@media (max-width: 1030px) { 
+    .about__avatar{
+        width: 332px;
+        height: 332px;
+        margin-left: 50px;
+
+    }
+  }  
+
+  @media (max-width: 950px) { 
+    .about__avatar{
+        width: 232px;
+        height: 232px;
+        margin-left: 40px;
+    }
+  }  
+
+  @media (max-width: 750px) { 
+    .about__avatar{
+        width: 272px;
+        height: 272px;
+        margin-left: 40px;
+    }
+  }  
+
+
+

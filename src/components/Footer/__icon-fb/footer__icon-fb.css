@@ -1,0 +1,21 @@
+.footer__icon-fb{
+    margin-right: 27px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+}
+
+@media (max-width: 720px) { 
+    .footer__icon-fb{
+        display: flex;
+        margin-top: -70px;
+        margin-left: 433px;
+    }
+  }  
+
+  @media (max-width: 620px) { 
+    .footer__icon-fb{
+        margin-left: 233px;
+    }
+  }  

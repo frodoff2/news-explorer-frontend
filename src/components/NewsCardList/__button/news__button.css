@@ -1,0 +1,30 @@
+.news__button{
+  font-family: 'Roboto', 'Arial', sans-serif; 
+  width: 288px;
+  height: 64px;
+  border-radius: 80px;
+  background-color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: 'Roboto ', 'Arial', sans-serif; 
+  border: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-top: 64px;
+}
+
+.news__button:hover{
+  cursor: pointer;
+  background-color: #E6E8EB;
+}
+
+@media (max-width: 750px) { 
+  .news__button {
+    margin-top: 15px;
+    margin-bottom: 32px;
+  }
+} 

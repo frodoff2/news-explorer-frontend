@@ -1,0 +1,12 @@
+.cards__icon{
+    background-image: url(../../../images/rec.svg);
+    background-size: cover;
+    width: 14px;
+    height: 19px;
+    margin: auto;
+}
+
+.cards__icon:hover{
+    background-image: url(../../../images/recmarked.svg);
+    cursor: pointer;
+}

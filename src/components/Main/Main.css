@@ -1,0 +1,35 @@
+@import url('__title/main__title.css');
+@import url('__par/main__par.css');
+@import url('__button/main__button.css');
+@import url('__input/main__input.css');
+@import url('__search/main__search.css');
+
+.main {
+  flex-direction: column;
+  display: flex;
+  width: 608px;
+  margin: auto;
+}  
+
+@media (max-width: 950px) { 
+    .main{ 
+      margin-left: 165px;
+      width: 500px;
+    }
+  } 
+
+  @media (max-width: 740px) { 
+    .main{ 
+      margin: auto;
+      width: 500px;
+    }
+  } 
+
+  @media (max-width: 620px) { 
+    .main{ 
+      margin-left: 16px;
+      width: 285px;
+    }
+  } 
+
+  

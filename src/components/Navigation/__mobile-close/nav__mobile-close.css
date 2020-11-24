@@ -1,0 +1,10 @@
+.nav__mobile-close{
+    width: 24px;
+    height: 24px;
+    background-image: url('../../../images/back.svg');
+    position: absolute;
+    background-size: contain;
+    border: none;
+    margin-left: 281px;
+    top: 20px;
+}
