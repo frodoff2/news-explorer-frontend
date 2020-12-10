@@ -1,3 +1,4 @@
+
 @import url('__image/cards__image.css');
 @import url('elements/elements.css');
 @import url('__date/cards__date.css');
@@ -13,26 +14,23 @@
 @import url('__trash/cards__trash.css');
 @import url('__trash/_active/cards__trash_active.css');
 @import url('__save-but/cards__save-but.css');
-@import url('__del-saved/сards__del-saved.css');
+@import url('__del-saved/cards__del-saved.css');
 @import url('__pic/cards__pic.css');
 @import url('__save/cards__save.css');
 
 
-.cards:not(:last-child){
-  margin-right: 15px;
-}
-
 .cards{
     max-width: 400px;
-    max-height: 576px;
     border-radius: 5%;  
     background-color: white;
+    margin-top: 16px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 1245px) { 
     .cards {
       width: 300px;
-      height: 502px;
+      height: 550px;
     }
   } 
 

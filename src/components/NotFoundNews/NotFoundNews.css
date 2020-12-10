@@ -1,0 +1,9 @@
+@import url('__title/noresults__title.css');
+@import url('__image/noresults__image.css');
+@import url('__text/noresults__text.css');
+
+
+.noresults{
+    background-color: #F5F6F7;
+    padding-bottom: 80px;
+}

@@ -12,7 +12,6 @@
   margin-left: 104px;
 }
 
-
 @media (max-width: 1050px) { 
   .header__logo { 
     margin-left: 40px;
@@ -31,6 +30,5 @@
     font-size: 16px;
     margin-left: 16px;
     z-index: 10;
-  
   }
 } 

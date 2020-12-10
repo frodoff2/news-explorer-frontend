@@ -1,12 +1,13 @@
 .cards__image{
-  max-width: 400px;
-  max-height: 272px;
+  width: 400px;
+  height: 272px;
+  display: block;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   border: 1px solid transparent;
 }
 
-@media (max-width: 1245px) { 
+  @media (max-width: 1245px) { 
     .cards__image {
       width: 300px;
     }
@@ -15,6 +16,7 @@
   @media (max-width: 950px) { 
     .cards__image {
       width: 224px;   
+      height: 150px;
     }
   } 
 
