@@ -39,7 +39,7 @@ export default class MainApi {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'authorization': `Bearer ${token}`
+        'Authorization': `Bearer ${token}`
       },
     })
       .then((res) => {
@@ -54,7 +54,7 @@ export default class MainApi {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'authorization': `Bearer ${token}`
+        'Authorization': `Bearer ${token}`
       },
     })
       .then((res) => {
