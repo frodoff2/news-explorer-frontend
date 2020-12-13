@@ -4,8 +4,8 @@ import quit from '../../images/quit.svg';
 
 function SavedNewsHeader(props) {
   return (
-    <header className="header-saved">
-      <div className="header__block header-saved__block"> 
+    <header className='header-saved'>
+      <div className='header__block header-saved__block'> 
         <div className={`header__menu_black ${props.isMenuOpen ? 'header__menu_close' : '' }`} onClick={props.onMenu} > </div>
         <p className={`header-saved__changed header__logo ${props.isMenuOpen ? 'header-saved__black' : '' }`}> NewsExplorer </p>
 
@@ -18,7 +18,6 @@ function SavedNewsHeader(props) {
             </a>
           </div>
         </div>
-
       </div>
     </header>
   );

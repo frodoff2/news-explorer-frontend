@@ -7,18 +7,12 @@
   height: 40px;
   margin-top: -260px;
   margin-left: 330px;
+  cursor: pointer;
 }
-
-@media (max-width: 1340px) { 
-  .cards__save-but {
-      margin-left: 300px;
-
-  }
-} 
 
 @media (max-width: 1245px) { 
     .cards__save-but {
-        margin-top: -200px;
+        margin-top: -250px;
         margin-left: 245px;
 
     }
@@ -33,7 +27,7 @@
 
 @media (max-width: 750px) { 
   .cards__save-but {
-      margin-top: -192px;
+      margin-top: -140px;
       margin-left: 235px;
   }
 } 

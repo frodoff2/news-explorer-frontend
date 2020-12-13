@@ -6,6 +6,8 @@
 @import url('./__or/popup__or.css');
 @import url('./__close/popup__close.css');
 @import url('./__register/popup__register.css');
+@import url('./__but-active/popup__but-active.css');
+
 
 
 .popup{
@@ -17,7 +19,6 @@
     transition: visibility 0s, opacity 0.5s linear;
     visibility: hidden;
     background: rgba(0, 0, 0, 0.5);
-
 }
   
 .popup_opened{
@@ -25,4 +26,28 @@
     display: flex;
     visibility: visible;
     opacity: 1;
+  }
+
+  .popup__input_error{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    margin-left: 35px;
+    width: 370px;
+    display: flex;
+    height: 30px;
+  }
+
+  @media (max-width: 500px){
+    .popup__input_error{  
+      margin-left: 16px;
+      width: 270px;
+    }
+  }
+  
+  .popup__container_big{
+    height: 458px;
   }

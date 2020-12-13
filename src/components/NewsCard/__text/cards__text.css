@@ -1,14 +1,14 @@
 .cards__text{
+  display: -webkit-box;
   font-family: 'Roboto', 'Arial', sans-serif; 
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   max-width: 352px;
-  height: 110px;
-  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  white-space: normal;
+  -webkit-line-clamp: 4;
   margin-top: 10px;
   margin-bottom: 18px;
 }

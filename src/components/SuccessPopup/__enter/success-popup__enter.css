@@ -1,0 +1,13 @@
+.success-popup__enter{
+    margin-left: 29px;
+}
+
+.success-popup__enter{
+    margin-left: 29px;
+}
+
+@media (max-width: 500px){
+    .success-popup__enter{
+        margin-top: 20px;
+    }
+  } 

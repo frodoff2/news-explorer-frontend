@@ -1,47 +1,55 @@
 import React from 'react';
-import './NewsCard.css'
-import first from '../../images/first.png';
-import second from '../../images/second.png';
-import third from '../../images/third.png';
+import './NewsCard.css';
+import { useLocation } from 'react-router-dom';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
 
-function NewsCard() {
+function NewsCard(props) {
+  const { handleAddCard, handleDeleteCard, article } = props;
+  const { keyword, title, text, date, source, link, image, _id} = article;
+  const name = React.useContext(CurrentUserContext);
+
+  const location = useLocation();
+  const isSavedPage = (location.pathname==='/saved-news');
+
+  const data = (str) => {
+    const parse = new Date(str);
+    return `${parse.toLocaleString('ru', { month: 'long', day: 'numeric' })}, ${parse.getFullYear()}`;
+  };
+
+  function handleClick() {
+    if (name) {
+      if (_id) {
+        handleDeleteCard(article);
+      } else {
+        handleAddCard(article);
+      }
+    }
+  }
+  const iconSaved = (
+    <div className='cards__icon'></div> 
+  );
+  const iconDelete = (
+    <div className='cards__trash'> </div>
+  );
+
+  const iconPressed = (
+    <div className='cards__icon_pressed'> </div>
+  );
+
   return (
-    <section className='elements'>
-      <div className='cards'>    
-        <img className='cards__image' alt='pic' src={first}/> 
-        <button className="cards__save-but"> <div className='cards__icon'> </div> </button>
-        <div className='cards__block'>
-          <p className='cards__date'>2 августа, 2019</p>
-          <h3 className='cards__title'>Национальное достояние
-           – парки</h3>
-          <p className='cards__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <p className='cards__source'>Лента.ру</p>
-        </div>
-      </div>   
-
-      <div className='cards'>    
-        <img className='cards__image' alt='pic' src={second}/> 
-        <button className="cards__save-but"> <div className='cards__icon'> </div> </button>
-        <div className='cards__block'>
-          <p className='cards__date'>2 августа, 2019</p>
-          <h3 className='cards__title'>Лесные огоньки: история одной фотографии</h3>
-          <p className='cards__text'>Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
-                                   из местных чудес природы.</p>
-          <p className='cards__source'>Медуза</p>
-        </div>
-      </div> 
-
-      <div className='cards'>    
-        <img className='cards__image' alt='pic' src={third}/> 
-        <button className="cards__save-but"> <div className='cards__icon'> </div> </button>
-        <div className='cards__block'>
-          <p className='cards__date'>2 августа, 2019</p>
-          <h3 className='cards__title'>Национальное достояние – парки</h3>
-          <p className='cards__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <p className='cards__source'>Риа</p>
-        </div>
-      </div> 
-</section>
+    <div className='cards'>
+      {(isSavedPage) ? <p className='cards__theme'>{keyword}</p> : null}    
+      <img className='cards__image' alt={keyword} src={image}/> 
+      <button onClick={handleClick} className='cards__save-but'> 
+        {(isSavedPage) ? iconDelete: (_id) ? iconPressed : iconSaved} 
+      </button>
+      <div className='cards__block'>
+        <p className='cards__date'>{data(date)}</p>
+        <h3 className='cards__title'>{title}</h3>
+        <p className='cards__text'>{text}</p>
+        <a href={link} className='cards__source' target='_blank' rel='noreferrer'>{source}</a>
+      </div>
+    </div>
 
     
   );

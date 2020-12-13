@@ -2,9 +2,9 @@
     background-color: #F5F6F7;
     display: grid;
     grid-template-columns: 29% 29% 29%;
-    grid-template-rows: 594px 646px;
     padding-top: 62px;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 1245px) { 

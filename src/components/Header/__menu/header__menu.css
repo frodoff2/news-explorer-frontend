@@ -14,14 +14,14 @@
 .header__menu_black{
     width: 24px;
     height: 24px;
-    background-image: url('../../../images/menu.svg');
     background-size: contain;
     display: none;
-    margin-left: 2990%;
+    margin-left: 900%;
     margin-top: 16px;
     background-repeat: no-repeat;
     background-color: none;
     z-index: 0.3;
+    background-image: url('../../../images/menu.svg');
 }
 
 @media (max-width: 670px) { 

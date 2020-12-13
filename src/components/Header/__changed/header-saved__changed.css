@@ -1,0 +1,11 @@
+.header-saved__changed{
+    color: black;
+    width: 120px;
+}
+
+@media (max-width: 950px) { 
+    .header-saved__saved { 
+      width: 100px;
+      padding-left: 12px;  
+    }
+  }

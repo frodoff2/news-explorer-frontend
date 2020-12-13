@@ -1,0 +1,43 @@
+.popup__but-active{
+    background-color: #E6E8EB;
+    color: #B6BCBF;
+    width: 84%; 
+    height: 64px; 
+    margin-top: 30px; 
+    margin-left: 34px; 
+    font-family: "Inter", "Arial", sans-serif; 
+    text-align: center; 
+    line-height: 22px;     
+    font-size: 18px; 
+    border-radius: 100px;
+    border: none;
+    z-index: 1;
+}
+
+ 
+.popup__but-active:hover{ 
+    opacity: 0.8; 
+    cursor: pointer; 
+  } 
+     
+  @media (max-width: 500px){ 
+    .popup__but-active{ 
+      width: 83%; 
+      margin-left: 20px; 
+      font-size: 14px; 
+      line-height: 17px; 
+      margin-top: 28px; 
+    } 
+  } 
+   
+  @media (max-width: 369px){ 
+    .popup__but-active{ 
+      width: 83%; 
+      margin-left: 20px; 
+      font-size: 14px; 
+      line-height: 17px; 
+      margin-top: 25px; 
+    } 
+  } 
+    
+    

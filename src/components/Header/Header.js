@@ -1,17 +1,21 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './Header.css'
 import Navigation from '../Navigation/Navigation';
 import Main from '../Main/Main';
 
 function Header(props) {
+  const { isMenuOpen, onMenu, onPopup, onMenuClose, handleSearch, handleExit } = props;
+  const location = useLocation();
+  const isSavedPage = (location.pathname==='/saved-news');
   return (
-    <header className="header">
-      <div className="header__block"> 
-        <p className="header__logo"> NewsExplorer </p>
-        <div className={`header__menu ${props.isMenuOpen ? 'header__menu_close' : '' }`} onClick={props.onMenu} > </div>
-        <Navigation onSingIn={props.onSingIn} isMenuOpen={props.isMenuOpen} onMenuClose={props.onMenuClose}/>     
+    <header className={(isSavedPage) ? 'header-saved' : 'header'}>
+      <div className={`header__block ${(isSavedPage) ? 'header-saved__container' : null}`}> 
+        <p className={`header__logo ${(isSavedPage && !isMenuOpen) ? `header-saved__changed ${isMenuOpen ? `header-saved__black` : '' }` : null}`}>NewsExplorer</p>
+        <div className={(isSavedPage && !isMenuOpen) ? `header__menu_black` : `header__menu ${isMenuOpen ? `header__menu_close headers` : '' }`} onClick={onMenu} > </div>
+        <Navigation onPopup={onPopup} isMenuOpen={isMenuOpen} onMenuClose={onMenuClose} handleExit={handleExit} />     
       </div>
-      <Main />
+      {(isSavedPage) ? null : <Main handleSearch={handleSearch} />}
     </header>
 
   );

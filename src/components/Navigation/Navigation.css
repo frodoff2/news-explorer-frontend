@@ -6,6 +6,11 @@
 @import url('__block/nav__block.css');
 
 
+.header-saved__name{
+  border-color: black;
+  color: black;
+}
+
 .nav{
   width: 65%;
 }

@@ -1,0 +1,22 @@
+@import url('./__container/success-popup__container.css');
+@import url('./__close/success-popup__close.css');
+@import url('./__enter/success-popup__enter.css');
+
+.success-popup__container{ 
+    width: 430px; 
+    height: 182px; 
+    background: white; 
+    border-radius: 10px;    
+    position: relative; 
+    transition: opacity 0.7s, visibility 0s linear 0.3s; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  } 
+  
+  @media (max-width: 500px){
+    .success-popup__container{
+      width: 60%;
+      margin-top: 80px;
+    }
+  }
