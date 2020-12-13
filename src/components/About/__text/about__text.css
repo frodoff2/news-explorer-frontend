@@ -1,0 +1,35 @@
+.about__text{
+    font-family: 'Roboto', 'Arial', sans-serif; 
+    max-width: 600px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 20px;
+    font-weight : 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (max-width: 1250px) { 
+    .about__text{ 
+      width: 424px;
+      margin-top: 16px;
+    }
+  }  
+
+  @media (max-width: 750px) { 
+    .about__text{
+      width: 375px;
+
+    }
+  }  
+
+  @media (max-width: 620px) { 
+    .about__text{
+      width: 288px;
+    }
+  }  
+
+
+
+

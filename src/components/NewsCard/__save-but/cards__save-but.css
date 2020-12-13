@@ -1,0 +1,33 @@
+.cards__save-but{
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -260px;
+  margin-left: 330px;
+  cursor: pointer;
+}
+
+@media (max-width: 1245px) { 
+    .cards__save-but {
+        margin-top: -250px;
+        margin-left: 245px;
+
+    }
+  } 
+
+  @media (max-width: 950px) { 
+    .cards__save-but {
+        margin-top: -145px;
+        margin-left: 170px;
+    }
+  } 
+
+@media (max-width: 750px) { 
+  .cards__save-but {
+      margin-top: -140px;
+      margin-left: 235px;
+  }
+} 

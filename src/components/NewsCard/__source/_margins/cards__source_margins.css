@@ -1,0 +1,13 @@
+.cards__source_margins{
+    margin-top: 40px;
+    color: red;
+    font-family: 'Roboto Slab', 'Arial', sans-serif; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin-bottom: 24px;
+}

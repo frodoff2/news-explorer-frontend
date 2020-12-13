@@ -1,0 +1,51 @@
+@import url('__main/nav__main.css');
+@import url('__auth/nav__auth.css');
+@import url('__saved/nav__saved.css');
+@import url('__mobile/nav__mobile.css');
+@import url('__mobile-close/nav__mobile-close.css');
+@import url('__block/nav__block.css');
+
+
+.header-saved__name{
+  border-color: black;
+  color: black;
+}
+
+.nav{
+  width: 65%;
+}
+
+@media (max-width: 1250px) { 
+  .nav{
+    width: 81%;
+  }  
+} 
+@media (max-width: 917px) { 
+  .nav{
+    width: 122%;
+  }  
+} 
+
+@media (max-width: 750px) { 
+  .nav{
+    width: 137%;
+  }  
+} 
+
+@media (max-width: 670px) { 
+  .nav{
+    display: none;
+  }  
+} 
+
+@media (max-width: 670px) { 
+  .nav_opened{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw; 
+    height: 100vh;
+    position: absolute;
+  }
+
+}

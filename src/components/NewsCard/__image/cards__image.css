@@ -1,0 +1,28 @@
+.cards__image{
+  width: 400px;
+  height: 272px;
+  display: block;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border: 1px solid transparent;
+}
+
+  @media (max-width: 1245px) { 
+    .cards__image {
+      width: 300px;
+    }
+  } 
+
+  @media (max-width: 950px) { 
+    .cards__image {
+      width: 224px;   
+      height: 150px;
+    }
+  } 
+
+
+  @media (max-width: 750px) { 
+    .cards__image {
+      width: 288px;   
+    }
+  } 

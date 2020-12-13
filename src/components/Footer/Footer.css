@@ -1,0 +1,36 @@
+@import url('__main/footer__main.css');
+@import url('__yandex/footer__yandex.css');
+@import url('__author/footer__author.css');
+@import url('__icon-fb/footer__icon-fb.css');
+@import url('__list/footer__list.css');
+@import url('__icon/footer__icon.css');
+
+.footer{
+  max-width: 1440px;
+  list-style-type: none;
+  padding-bottom: 26px;
+
+}
+
+@media (max-width: 950px) { 
+    .footer{
+        height: 64px;
+        padding-bottom: 0;
+    }
+  } 
+  
+
+  @media (max-width: 720px) { 
+    .footer{
+        height: 170px;
+        margin-left: 100px;
+    }
+  } 
+  
+  @media (max-width: 620px) { 
+    .footer{
+        margin-left: 0;
+    }
+  } 
+  
+

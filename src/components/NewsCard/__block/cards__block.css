@@ -1,0 +1,10 @@
+.cards__block{
+  margin-left: 24px;
+}
+
+
+@media (max-width: 950px) { 
+  .cards__block {
+    margin-left: 16px; 
+  }
+} 

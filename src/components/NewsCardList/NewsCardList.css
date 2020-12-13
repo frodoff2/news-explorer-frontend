@@ -1,0 +1,7 @@
+@import url('__results/news__results.css');
+@import url('__button/news__button.css');
+
+.news{
+  background-color: #F5F6F7;
+  border: 1px solid transparent;
+}

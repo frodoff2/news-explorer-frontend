@@ -1,0 +1,33 @@
+.cards__text{
+  display: -webkit-box;
+  font-family: 'Roboto', 'Arial', sans-serif; 
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 352px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 1245px) { 
+    .cards__text {
+      width: 250px;
+    }
+  } 
+
+@media (max-width: 950px) { 
+    .cards__text {
+      width: 192px;
+      height: 88px;
+      margin-top: 5px;
+    }
+  }
+  @media (max-width: 750px) { 
+    .cards__text {
+      width: 256px;
+    }
+  } 

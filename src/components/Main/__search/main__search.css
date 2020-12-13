@@ -1,0 +1,27 @@
+.main__search{
+  position: relative;
+  max-width: 608px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 1270px) { 
+  .main__search{ 
+    width: 500px;
+  }
+} 
+
+@media (max-width: 1050px) { 
+  .main__search{ 
+    width: 448px;
+    padding-bottom: 48px;
+  }
+} 
+
+@media (max-width: 620px) { 
+  .main__search{ 
+    width: 288px;
+    padding-bottom:  82px;
+  }
+} 
+
+

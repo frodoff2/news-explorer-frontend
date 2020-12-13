@@ -1,0 +1,26 @@
+.saved-news__parag{
+    font-family: 'Roboto', 'Arial', sans-serif; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: 1A1B2;
+    margin-bottom: 56px;
+    margin-top: 0;
+    margin-left: 102px;
+}
+
+@media (max-width: 768px) { 
+    .saved-news__parag{
+      margin-left: 40px;
+  
+    }
+  } 
+
+  @media (max-width: 540px) { 
+    .saved-news__parag{
+      width: 288px;
+      margin-left: 16px;
+    }
+  } 
+
